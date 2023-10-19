@@ -1,0 +1,72 @@
+:root {
+    --green: #59981A;
+    --yellow-green: #ECF87F;
+    --lime-green: #81B622;
+    --olive-green: #3D550C;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3D550C;
+}
+
+.navbar {
+    background-color: var(--green);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: var(--green);
+}
+
+.navbar-toggler {
+    background-color: var(--yellow-green);
+}
+
+.section-title {
+    font-family: 'Gabarito', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#sobre,
+#cardapio {
+    background-color: var(--yellow-green);
+}
+
+.text-colored {
+    color: var(--green);
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: var(--green);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carrousel-item img {
+        height: 280px;
+    }
+}
