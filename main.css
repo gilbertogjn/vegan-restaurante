@@ -37,6 +37,20 @@ body {
     font-size: 1.5rem;
 }
 
+#carousel {
+    height: 460px;
+}
+
+#carousel img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#carousel h3 {
+    font-size: 3.5rem;
+}
+
 #sobre,
 #cardapio {
     background-color: var(--yellow-green);
