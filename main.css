@@ -10,8 +10,12 @@ body {
     color: var(--olive-green);
 }
 
+a {
+    text-decoration: none;
+}
+
 .py-5 {
-    padding: 5rem 0 !important;
+    padding: 4rem 0 !important;
 }
 
 .btn-success {
@@ -76,7 +80,12 @@ body {
 }
 
 #carousel h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+}
+
+.carousel-caption {
+    width: 650px;
+    margin: 0 auto;
 }
 
 #sobre,
@@ -153,21 +162,59 @@ footer h4 {
 }
 
 #fale-conosco form button {
-    background-color: #90ce1d;
+    background-color: #83be15;
 }
 
 #fale-conosco form button:hover {
-    background-color: #85bf19;
+    background-color: #73aa0e;
 }
 
+@media (min-width:768px) and (max-width: 1024px) {
+
+    #menu-navegacao {
+        margin-top: 1rem;
+    }
+
+    #menu-navegacao .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousel-caption {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    #sobre .col-lg-6 {
+        padding-bottom: 2rem;
+    }
+
+    #reserva .row {
+        width: 70%!important;
+    }
+
+    .tab-content {
+        margin-left: 1.5rem;
+    }
+}
 
 @media (max-width: 767px) {
     .py-5 {
-        padding: 4rem 0 !important;
+        padding: 3rem 0 !important;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
     }
 
     #menu-navegacao {
         padding-top: 1rem;
+    }
+
+    .carousel-caption {
+        width: auto;
+        margin: 0 auto;
     }
     
     .carrousel-item img {
@@ -175,7 +222,7 @@ footer h4 {
     }
 
     .section-title-slide {
-        font-size: 2.5em!important;
+        font-size: 1.6em!important;
     }
 
     #reserva {
@@ -191,9 +238,18 @@ footer h4 {
         padding: 2.5em!important;
     }
 
+    #cardapio nav {
+        margin-bottom: 2rem;
+    }
+
+    .item-cardapio {
+        height: auto;
+    }
+
     #footer-credits {
         margin-top: 2rem;
         text-align: center;
+        font-size: 0.7rem;
     }
 
     #dev-credits {
