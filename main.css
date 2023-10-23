@@ -1,13 +1,25 @@
 :root {
     --green: #59981A;
-    --yellow-green: #ECF87F;
+    --yellow-green: #ecf87f0f;
     --lime-green: #81B622;
     --olive-green: #3D550C;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #3D550C;
+    color: var(--olive-green);
+}
+
+.py-5 {
+    padding: 5rem 0 !important;
+}
+
+.btn-success {
+    background-color: var(--green);
+}
+
+.btn-success:hover {
+    background-color: var(--olive-green);
 }
 
 .navbar {
@@ -30,7 +42,8 @@ body {
     background-color: var(--yellow-green);
 }
 
-.section-title {
+.section-title,
+.section-title-slide {
     font-family: 'Gabarito', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -38,13 +51,28 @@ body {
 }
 
 #carousel {
-    height: 460px;
+    height: 480px;
+}
+
+#carousel .carrousel-item {
+    position: relative;
+}
+
+#carousel .overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    pointer-events: none;
 }
 
 #carousel img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 480px;
 }
 
 #carousel h3 {
@@ -56,8 +84,30 @@ body {
     background-color: var(--yellow-green);
 }
 
+#cardapio {
+    min-height: 720px;
+}
+
+.item-cardapio {
+    object-fit: cover;
+    height: 170px;
+    border-radius: 6px;
+}
+
 .text-colored {
     color: var(--green);
+}
+
+#reserva {
+    height: 460px;
+    background-image: url(./images/bg-reserva.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reserva .row {
+    background-color: #ffffffed;
 }
 
 .nav-cardapio .nav-link.active,
@@ -79,8 +129,74 @@ body {
     text-decoration: none;
 }
 
+.social-links li a i {
+    color: #fff;
+}
+
+footer {
+    background-color: var(--green);
+    color: #fff;
+}
+
+footer .text-colored{
+    color: #90ce1d;
+}
+
+footer span,
+footer h3 {
+    color: #fff;
+}
+
+footer h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#fale-conosco form button {
+    background-color: #90ce1d;
+}
+
+#fale-conosco form button:hover {
+    background-color: #85bf19;
+}
+
+
 @media (max-width: 767px) {
+    .py-5 {
+        padding: 4rem 0 !important;
+    }
+
+    #menu-navegacao {
+        padding-top: 1rem;
+    }
+    
     .carrousel-item img {
         height: 280px;
+    }
+
+    .section-title-slide {
+        font-size: 2.5em!important;
+    }
+
+    #reserva {
+        height: auto;
+    }
+
+    #reserva .container {
+        display: flex;
+    }
+
+    #reserva .row {
+        width: 100%!important;
+        padding: 2.5em!important;
+    }
+
+    #footer-credits {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    #dev-credits {
+        display: none;
     }
 }
